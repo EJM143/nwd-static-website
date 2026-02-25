@@ -82,7 +82,7 @@ function Main() {
             Support the Next Wave of Developers
           </p>
           <p className="donation-div__flexcol__paragraph">
-            Your contribution helps us provide essential resources, mentorship, and real-world project opportunities to aspiring sutdent developers, empowering them to launch successful careers in tech.
+            Your contribution helps us provide essential resources, mentorship, and real-world project opportunities to aspiring student developers, empowering them to launch successful careers in tech.
           </p>
           <Link to={"/Donation"}>
             <button className="donation-div__button" type="button">
