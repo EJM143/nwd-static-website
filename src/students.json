@@ -53,6 +53,14 @@
             "email": "mathewj2009@gmail.com",
             "github": "https://github.com/jmathew12",
             "linkedin": "https://www.linkedin.com/in/jmathew12/"
+        {
+            "name": "Katrina Hill",
+            "photo": "Katrina-Hill.webp",
+            "role": "Developer",
+            "about": "I'm an Application Development student at North Seattle College with a passion for building software that makes a real difference. Whether it's web apps, mobile apps, or creative side projects, I love turning ideas into working code.",
+            "email": "khill365@gmail.com",
+            "github": "https://github.com/katrina-l-hill",
+            "linkedin": "https://www.linkedin.com/in/katrina-l-hill/"
         }
     ]
 }
