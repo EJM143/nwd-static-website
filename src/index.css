@@ -335,8 +335,8 @@ navbar
 }
 /* ======= donation ======= */
 .donation-div {
-  height: 40vh;
-  background-color: var(--bg-color);
+  min-height: 40vh;
+  padding: 4rem 2rem;
   background: linear-gradient(
     90deg,
     rgba(55, 55, 55, 0) 0%,
@@ -344,6 +344,8 @@ navbar
     rgba(149, 202, 89, 1) 69%
   );
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .donation-div__flexcol {
   display: flex;
