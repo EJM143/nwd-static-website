@@ -10,6 +10,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import DevelopersPage from './pages/DevelopersPage';
 import GraduatesPage from './pages/GraduatesPage';
 import CompaniesPage from './pages/CompaniesPage';
+import ApplyPage from "./pages/ApplyPage";
 import Donation from './pages/Donation';
 import ServicesPage from './pages/ServicesPage';
 
@@ -20,10 +21,8 @@ function PageTracker() {
   useEffect(() => {
     const page = location.hash.replace("#", "") || "/Home";
 
-    // GA4
     ReactGA.send({ hitType: "pageview", page });
 
-    // Google Ads
     if (window.gtag) {
       window.gtag("config", "AW-17737966605", {
         page_path: page,
@@ -56,6 +55,7 @@ function App() {
         <Route path="/Donation" element={<Donation />} />
         <Route path="/Donate" element={<Donation />} />
         <Route path="/Services" element={<ServicesPage />} />
+        <Route path="/apply" element={<ApplyPage />} />
       </Routes>
     </Router>
   );

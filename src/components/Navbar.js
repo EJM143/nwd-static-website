@@ -108,6 +108,16 @@ const Navbar = () => {
                   Graduates
                 </Link>
                 <Link
+                  to="/apply"
+                  className="nav-dropdown-item"
+                  onClick={() => {
+                    setIsDropdownOpen(false);
+                    setMenuOpen(false);
+                  }}
+                >
+                  Apply
+                </Link>
+                <Link
                   to="/Companies"
                   className="nav-dropdown-item"
                   onClick={() => setIsDropdownOpen(false)}
