@@ -94,7 +94,7 @@ navbar
  ========== */
 .homepage-content,
 .portfolio-div,
-.student-prev,
+.developer-prev,
 .donation-div,
 .contact-div {
   max-width: 2200px;
@@ -248,8 +248,8 @@ navbar
   }
 }
 
-/* ======= student preview ======= */
-.student-prev {
+/* ======= developer preview ======= */
+.developer-prev {
   height: 55vh;
   background-image: url("images/Arts_and_Sciences.jpg");
   background-size: cover;
@@ -259,7 +259,7 @@ navbar
   align-items: center;
 }
 
-.student-prev__gallery {
+.developer-prev__gallery {
   flex-basis: 70%;
   display: flex;
   flex-direction: column;
@@ -269,20 +269,20 @@ navbar
   gap: 1rem;
 }
 
-.student-thumbnail {
+.developer-thumbnail {
   height: 80px;
   width: 80px;
   object-fit: cover;
   border-radius: 20px;
 }
 
-.student-prev__gallery__link {
+.developer-prev__gallery__link {
   font-weight: 600;
   color: white;
   font-size: 1.5rem;
 }
 
-.student-prev__quote {
+.developer-prev__quote {
   flex-basis: 30%;
   font-size: 2rem;
   color: white;
@@ -290,7 +290,7 @@ navbar
   max-width: 20ch;
 }
 
-.student-prev__gallery__grid {
+.developer-prev__gallery__grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 1rem;
@@ -298,45 +298,45 @@ navbar
 }
 
 @media (max-width: 1225px) {
-  .student-prev {
+  .developer-prev {
     height: fit-content;
     padding-block: 5rem;
     gap: 1rem;
   }
 
-  .student-prev__gallery__grid {
+  .developer-prev__gallery__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .student-prev__quote {
+  .developer-prev__quote {
     justify-self: center;
   }
 
-  .student-prev__quote,
-  .student-prev__gallery {
+  .developer-prev__quote,
+  .developer-prev__gallery {
     flex-basis: 50%;
   }
 }
 
 @media (max-width: 800px) {
-  .student-prev {
+  .developer-prev {
     flex-direction: column-reverse;
     padding-block: 2.5rem;
   }
 
-  .student-prev__gallery {
+  .developer-prev__gallery {
     padding-inline-start: unset;
   }
 
-  .student-prev__quote {
+  .developer-prev__quote {
     font-size: 2rem;
     max-width: 20ch;
   }
 }
 /* ======= donation ======= */
 .donation-div {
-  height: 40vh;
-  background-color: var(--bg-color);
+  min-height: 40vh;
+  padding: 4rem 2rem;
   background: linear-gradient(
     90deg,
     rgba(55, 55, 55, 0) 0%,
@@ -344,6 +344,8 @@ navbar
     rgba(149, 202, 89, 1) 69%
   );
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .donation-div__flexcol {
   display: flex;
@@ -594,11 +596,11 @@ navbar
 
 
 /* ==========
- students
+ developers
  ========== */
 
 
-.students-flexcolumn {
+.developers-flexcolumn {
   min-width: 200px;
   width: 80vw;
   max-width: 1900px;
@@ -610,13 +612,13 @@ navbar
   margin-block-end: 2rem;
 }
 
-.students-flexcolumn__h1 {
+.developers-flexcolumn__h1 {
   font-size: 3rem;
   font-weight: 700;
   width: 14ch;
 }
 
-.students-flexcolumn__student-flex-item {
+.developers-flexcolumn__developer-flex-item {
   display: flex;
   flex-direction: row;
   min-height: 20vh;
@@ -624,7 +626,7 @@ navbar
   gap: 2rem;
 }
 
-.students-flexcolumn__student-flex-item__img {
+.developers-flexcolumn__developer-flex-item__img {
   width: 20vh;
   height: auto;
   aspect-ratio: 1;
@@ -633,7 +635,7 @@ navbar
   border-radius: 20px;
 }
 
-.students-flexcolumn__student-flex-item__info-div {
+.developers-flexcolumn__developer-flex-item__info-div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -655,13 +657,13 @@ navbar
   gap: 0.5rem;
 }
 
-.student-role {
+.developer-role {
   color: gray;
   font-style: italic;
 }
 
 @media (max-width: 900px) {
-  .students-flexcolumn__student-flex-item {
+  .developers-flexcolumn__developer-flex-item {
     /* display: flex; */
     flex-direction: column;
     /* min-height: 20vh;
@@ -784,10 +786,10 @@ svg {
 }
 
 /* ======================================================
-   STUDENT PREVIEW SECTION FIX
+   DEVELOPER PREVIEW SECTION FIX
 ====================================================== */
 @media (max-width: 800px) {
-  .student-prev {
+  .developer-prev {
     height: auto;               
     min-height: auto;
     padding: 3.5rem 1.5rem;      
@@ -797,13 +799,13 @@ svg {
     text-align: center;
   }
 
-  .student-prev img {
+  .developer-prev img {
     max-width: 180px;            
     height: auto;
   }
 
-  .student-prev h2,
-  .student-prev h3 {
+  .developer-prev h2,
+  .developer-prev h3 {
     font-size: 1.6rem;
   }
 }
@@ -813,24 +815,24 @@ svg {
 ====================================================== */
 @media (max-width: 375px) {
 
-  .students-flexcolumn__h1 {
+  .developers-flexcolumn__h1 {
     font-size: 2rem;
     width: auto;
     white-space: normal;
   }
 
-  .students-flexcolumn__student-flex-item {
+  .developers-flexcolumn__developer-flex-item {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  .students-flexcolumn__student-flex-item__info-div {
+  .developers-flexcolumn__developer-flex-item__info-div {
     width: 100%;
     text-align: center;
   }
 
-  .students-flexcolumn__student-flex-item__info-div a {
+  .developers-flexcolumn__developer-flex-item__info-div a {
     word-break: break-word;
   }
 }

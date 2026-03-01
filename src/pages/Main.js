@@ -2,18 +2,18 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import nwdScreenshot from "../images/next-wave-dev.png";
 import DeveloperThumbnail from "../components/DeveloperThumbnail";
-import studentData from "../students.json";
+import developerData from "../developers.json";
 import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
 import Footer from "../components/Footer";
 
-const studentDatafiltered = studentData.students.filter(
+const developerDatafiltered = developerData.developers.filter(
   (item) => item.photo !== "anon-profile-image.png"
 );
-const studentDataSlice = studentDatafiltered.slice(0, 16);
+const developerDataSlice = developerDatafiltered.slice(0, 16);
 
 function Main() {
-  console.log(studentDatafiltered.length);
+  console.log(developerDatafiltered.length);
   return (
     <>  
       <Helmet>
@@ -57,21 +57,21 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="student-prev">
-        <div className="student-prev__gallery">
-          <div className="student-prev__gallery__grid">
-            {studentDataSlice.map((student, index) => (
+      <div className="developer-prev">
+        <div className="developer-prev__gallery">
+          <div className="developer-prev__gallery__grid">
+            {developerDataSlice.map((developer, index) => (
               <DeveloperThumbnail
-                fileName={student.photo}
-                studentName={student.name}
+                fileName={developer.photo}
+                developerName={developer.name}
               />
             ))}
           </div>
-          <Link className="student-prev__gallery__link" to={"/Developers"}>
+          <Link className="developer-prev__gallery__link" to={"/Developers"}>
             Get to know our developers
           </Link>
         </div>
-        <p className="student-prev__quote">
+        <p className="developer-prev__quote">
           “Growth and comfort do not coexist.” <br />
           <span>— Ginni Rometty</span>
           </p>
@@ -82,7 +82,7 @@ function Main() {
             Support the Next Wave of Developers
           </p>
           <p className="donation-div__flexcol__paragraph">
-            Your contribution helps us provide essential resources, mentorship, and real-world project opportunities to aspiring sutdent developers, empowering them to launch successful careers in tech.
+            Your contribution helps us provide essential resources, mentorship, and real-world project opportunities to aspiring student developers, empowering them to launch successful careers in tech.
           </p>
           <Link to={"/Donation"}>
             <button className="donation-div__button" type="button">

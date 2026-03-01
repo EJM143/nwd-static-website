@@ -23,11 +23,6 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const closeMenus = () => {
-    setMenuOpen(false);
-    setIsDropdownOpen(false);
-  };
-
   return (
     <nav
       className="navbar"
@@ -47,7 +42,7 @@ const Navbar = () => {
           justifyContent: "space-between",
         }}
       >
-        <Link to="/" onClick={closeMenus}>
+        <Link to="/Home">
           <img
             src={NWDLogo}
             alt="Next Wave Dev Logo"
@@ -91,6 +86,8 @@ const Navbar = () => {
           <WhiteSpacing />
           <Item name="Portfolio" onClick={closeMenus} />
           <WhiteSpacing />
+          <Item name="Services" />
+          <WhiteSpacing />
 
           {/* ✅ Added Pricing */}
           <Item name="Pricing" onClick={closeMenus} />
@@ -111,14 +108,21 @@ const Navbar = () => {
                 <Link
                   to="/Graduates"
                   className="nav-dropdown-item"
-                  onClick={closeMenus}
+                  onClick={() => setIsDropdownOpen(false)}
                 >
                   Graduates
                 </Link>
                 <Link
-                  to="/Companies"
+                  to="/apply"
                   className="nav-dropdown-item"
                   onClick={closeMenus}
+                >
+                  Apply
+                </Link>
+                <Link
+                  to="/Companies"
+                  className="nav-dropdown-item"
+                  onClick={() => setIsDropdownOpen(false)}
                 >
                   Companies
                 </Link>
@@ -132,6 +136,8 @@ const Navbar = () => {
             to="https://bonfire.com/store/next-wave-dev-store/"
             external
           />
+          <WhiteSpacing />
+          <Item name="Donation" />
         </div>
       )}
     </nav>

@@ -1,5 +1,5 @@
 {
-    "students": [
+    "developers": [
         { 
             "name": "Taylor Papke",
             "photo": "Taylor-Papke.webp",
@@ -44,6 +44,24 @@
           "email": "johnff0609@gmail.com",
           "github": "https://github.com/johnff9",
           "linkedin": "https:///www.linkedin.com/in/john-farnandez"
+        },
+        {
+            "name": "Katrina Hill",
+            "photo": "Katrina-Hill.webp",
+            "role": "Developer",
+            "about": "I'm an Application Development student at North Seattle College with a passion for building software that makes a real difference. Whether it's web apps, mobile apps, or creative side projects, I love turning ideas into working code.",
+            "email": "khill365@gmail.com",
+            "github": "https://github.com/katrina-l-hill",
+            "linkedin": "https://www.linkedin.com/in/katrina-l-hill/"
+        },
+        { 
+            "name": "James Mathew",
+            "photo": "James-Mathew.webp",
+            "role": "Developer",
+            "about": "I’m currently pursuing a Bachelor’s degree in Application Development at North Seattle College, with an expected graduation date of June 2026. My academic focus is on both front-end and back-end development, with hands-on experience using technologies like React, Java, and Python. I'm passionate about building functional, user-friendly applications and continuously expanding my skills through coursework and collaborative projects.",
+            "email": "mathewj2009@gmail.com",
+            "github": "https://github.com/jmathew12",
+            "linkedin": "https://www.linkedin.com/in/jmathew12/"
         }
     ]
 }
