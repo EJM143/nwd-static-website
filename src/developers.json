@@ -1,67 +1,76 @@
 {
-    "developers": [
-        { 
-            "name": "Taylor Papke",
-            "photo": "Taylor-Papke.webp",
-            "role": "Product Owner / Technical Project Manager",
-            "about": "NSC AD BAS 2024 Graduate. Passionate about leadership, teamwork and always doing our best!",
-            "email": "taylorpapke.student@gmail.com",
-            "github": "https://github.com/orgs/SeattleColleges/people/taylorpapke",
-            "linkedin": "https://www.linkedin.com/in/taylor-papke/"
-        },
-        { 
-            "name": "Nha Minh Pham",
-            "photo": "Nha-Pham.webp",
-            "role": "Developer",
-            "about": "I am an international student from Vietnam. Currently a Junior in AD program at North. I am also a member of Student Leadership here.",
-            "email": "phamminhnha2003@gmail.com",
-            "github": "https://github.com/nhapham03",
-            "linkedin": "https://www.linkedin.com/in/nha-pham-96a181295/"
-        },
-        { 
-            "name": "Jesse Caddell",
-            "photo": "anon-profile-image.webp",
-            "role": "Developer",
-            "about": "I have a passion for working on games and apps. I currently have a fascination with twitch applications! I am a music lover and can be found at live events often.",
-            "email": "jesse.caddell@wsu.edu",
-            "github": "https://github.com/JesseCaddell",
-            "linkedin": "https://www.linkedin.com/in/jesse-caddell-316086296/"
-        },
-        {
-            "name":"Beimnet Tesfaye",
-            "photo":"Beimnet-Tesfaye.webp",
-            "role":"Developer",
-            "about":"I am a passionate and dedicated student in the Application Development program at North Seattle College. I am eager to learn and grow my skills in software development, and I am excited to contribute to real-world projects.",
-            "email":"bemnetfeleke96@gmail.com",
-            "github": "https://github.com/beimnettes",
-            "linkedin": "https://www.linkedin.com/in/beimnet-tesfaye-220418291/"
-        },
-        {
-          "name": "John Farnandez",
-          "photo": "John-Farnandez.webp",
-          "role": "Developer",
-          "about": "I'm currently a senior in the CS graduate program with a concentration in Data Science in the data science practicum. Hoping to learn more about working with clients through the AD projects.",
-          "email": "johnff0609@gmail.com",
-          "github": "https://github.com/johnff9",
-          "linkedin": "https:///www.linkedin.com/in/john-farnandez"
-        },
-        {
-            "name": "Katrina Hill",
-            "photo": "Katrina-Hill.webp",
-            "role": "Developer",
-            "about": "I'm an Application Development student at North Seattle College with a passion for building software that makes a real difference. Whether it's web apps, mobile apps, or creative side projects, I love turning ideas into working code.",
-            "email": "khill365@gmail.com",
-            "github": "https://github.com/katrina-l-hill",
-            "linkedin": "https://www.linkedin.com/in/katrina-l-hill/"
-        },
-        { 
-            "name": "James Mathew",
-            "photo": "James-Mathew.webp",
-            "role": "Developer",
-            "about": "I’m currently pursuing a Bachelor’s degree in Application Development at North Seattle College, with an expected graduation date of June 2026. My academic focus is on both front-end and back-end development, with hands-on experience using technologies like React, Java, and Python. I'm passionate about building functional, user-friendly applications and continuously expanding my skills through coursework and collaborative projects.",
-            "email": "mathewj2009@gmail.com",
-            "github": "https://github.com/jmathew12",
-            "linkedin": "https://www.linkedin.com/in/jmathew12/"
-        }
-    ]
+  "developers": [
+    { 
+      "name": "Taylor Papke",
+      "photo": "Taylor-Papke.webp",
+      "role": "Product Owner / Technical Project Manager",
+      "about": "NSC AD BAS 2024 Graduate. Passionate about leadership, teamwork and always doing our best!",
+      "email": "taylorpapke.student@gmail.com",
+      "github": "https://github.com/orgs/SeattleColleges/people/taylorpapke",
+      "linkedin": "https://www.linkedin.com/in/taylor-papke/"
+    },
+    { 
+      "name": "Nha Minh Pham",
+      "photo": "Nha-Pham.webp",
+      "role": "Developer",
+      "about": "I am an international student from Vietnam. Currently a Junior in AD program at North. I am also a member of Student Leadership here.",
+      "email": "phamminhnha2003@gmail.com",
+      "github": "https://github.com/nhapham03",
+      "linkedin": "https://www.linkedin.com/in/nha-pham-96a181295/"
+    },
+    { 
+      "name": "Jesse Caddell",
+      "photo": "anon-profile-image.webp",
+      "role": "Developer",
+      "about": "I have a passion for working on games and apps.",
+      "email": "jesse.caddell@wsu.edu",
+      "github": "https://github.com/JesseCaddell",
+      "linkedin": "https://www.linkedin.com/in/jesse-caddell-316086296/"
+    },
+    {
+      "name": "Beimnet Tesfaye",
+      "photo": "Beimnet-Tesfaye.webp",
+      "role": "Developer",
+      "about": "Passionate and dedicated Application Development student at North Seattle College.",
+      "email": "bemnetfeleke96@gmail.com",
+      "github": "https://github.com/beimnettes",
+      "linkedin": "https://www.linkedin.com/in/beimnet-tesfaye-220418291/"
+    },
+    {
+      "name": "John Farnandez",
+      "photo": "John-Farnandez.webp",
+      "role": "Developer",
+      "about": "CS graduate program with concentration in Data Science.",
+      "email": "johnff0609@gmail.com",
+      "github": "https://github.com/johnff9",
+      "linkedin": "https://www.linkedin.com/in/john-farnandez"
+    },
+    {
+      "name": "Luwam Habtu",
+      "photo": "luwam-habtu.webp",
+      "role": "Developer",
+      "about": "Passionate about full-stack development, cloud computing, and building scalable web applications.",
+      "email": "luwamhabtu07@gmail.com",
+      "github": "https://github.com/luwamhabtu07",
+      "linkedin": "https://www.linkedin.com/in/luwam-habtu-803915300"
+    },
+    {
+      "name": "Katrina Hill",
+      "photo": "Katrina-Hill.webp",
+      "role": "Developer",
+      "about": "Application Development student passionate about building impactful software.",
+      "email": "khill365@gmail.com",
+      "github": "https://github.com/katrina-l-hill",
+      "linkedin": "https://www.linkedin.com/in/katrina-l-hill/"
+    },
+    { 
+      "name": "James Mathew",
+      "photo": "James-Mathew.webp",
+      "role": "Developer",
+      "about": "Bachelor’s degree in Application Development, expected June 2026.",
+      "email": "mathewj2009@gmail.com",
+      "github": "https://github.com/jmathew12",
+      "linkedin": "https://www.linkedin.com/in/jmathew12/"
+    }
+  ]
 }

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { FooterLink } from "./microComponents/footer/footerLink";
 import { Separator } from "./microComponents/footer/separator";
 import NEXTWAVEDEV from "../images/NextWaveDevLogo/NextWaveDev_FINAL_SMALL.jpg";
-import CANDID_SEAL from "../images/candid-transparency-logo.png";
 import LINKEDIN_ICON from "../images/linkedin_logo.png";
+import CandidSeal from "./CandidSeal";
 
 const Footer = () => {
   return (
@@ -20,9 +20,9 @@ const Footer = () => {
         flexWrap: "wrap",
         padding: "1rem 2rem",
         boxSizing: "border-box",
-        flexWrap: "wrap",
       }}
     >
+      {/* LEFT SIDE */}
       <div
         style={{
           display: "flex",
@@ -30,12 +30,13 @@ const Footer = () => {
           width: "auto",
           gap: "5rem",
           flexWrap: "wrap",
-          justifyContent: "flex-start", // maintain original left alignment
-          alignItems: "center"
+          justifyContent: "flex-start",
+          alignItems: "center",
         }}
       >
-        <ul style={{ ...footerList }}>
-          <h4 style={{ ...footerCategory }}>Navigation</h4>
+        {/* Navigation */}
+        <ul style={footerList}>
+          <h4 style={footerCategory}>Navigation</h4>
           <Separator />
           <ul
             style={{
@@ -44,7 +45,6 @@ const Footer = () => {
               flexDirection: "row",
               gap: "1rem",
               flexWrap: "wrap",
-              justifyContent: "flex-start" // maintain left alignment
             }}
           >
             <li><FooterLink name="Home" /></li>
@@ -64,19 +64,21 @@ const Footer = () => {
           </ul>
         </ul>
 
-        <ul className="footer-contact">
-          <h4 style={{ ...footerCategory }}>Contact Us</h4>
+        {/* Contact */}
+        <ul>
+          <h4 style={footerCategory}>Contact Us</h4>
           <Separator />
           <Link
             to={"mailto:nextwavedev.org@gmail.com"}
             style={{ textDecoration: "none" }}
           >
-            <li style={{ ...footerList }}>nextwavedev.org@gmail.com</li>
+            <li style={footerList}>nextwavedev.org@gmail.com</li>
           </Link>
         </ul>
 
-        <ul style={{ ...footerList }}>
-          <h4 style={{ ...footerCategory }}>Join Us</h4>
+        {/* Join Us */}
+        <ul style={footerList}>
+          <h4 style={footerCategory}>Join Us</h4>
           <Separator />
           <ul
             style={{
@@ -85,7 +87,6 @@ const Footer = () => {
               flexDirection: "row",
               gap: "1rem",
               flexWrap: "wrap",
-              justifyContent: "flex-start"
             }}
           >
             <li><FooterLink name="Graduates" to="/graduates" /></li>
@@ -94,6 +95,7 @@ const Footer = () => {
         </ul>
       </div>
 
+      {/* RIGHT SIDE */}
       <div
         style={{
           display: "flex",
@@ -101,14 +103,15 @@ const Footer = () => {
           width: "auto",
           gap: "2rem",
           alignItems: "center",
-          justifyContent: "flex-end", // maintain original right alignment
-          flexWrap: "wrap"
+          justifyContent: "flex-end",
+          flexWrap: "wrap",
         }}
       >
         {/* LinkedIn Icon */}
         <a
           href="https://www.linkedin.com/company/next-wave-dev/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src={LINKEDIN_ICON}
@@ -117,31 +120,11 @@ const Footer = () => {
           />
         </a>
 
-        {/* Local Candid Seal of Transparency */}
-        <a
-          href="https://app.candid.org/profile/16346708/next-wave-dev-33-3742956"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={CANDID_SEAL}
-            alt="Candid Silver Seal of Transparency"
-            style={{
-              height: "64px",
-              width: "auto",
-              display: "block",
-              borderRadius: "4px",
-              backgroundColor: "white",
-              padding: "4px",
-            }}
-          />
-        </a>
+        {/* Dynamic Candid Seal */}
+        <CandidSeal />
 
-        <Link
-          to={"/"}
-        // target="_blank"
-        // rel="noopener noreferrer"
-        >
+        {/* Logo */}
+        <Link to={"/"}>
           <img
             src={NEXTWAVEDEV}
             alt="Next Wave Dev logo"
