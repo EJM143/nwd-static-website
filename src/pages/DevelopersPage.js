@@ -6,25 +6,6 @@ import Developer from "../components/Developer";
 import data from "../developers.json";
 import { Helmet } from "react-helmet";
 
-// const developers = [
-//   {
-//     name: "Alice Johnson",
-//     photo: "anon-profile-image.png",
-//     about: "Alice is a computer science major with a passion for AI.",
-//     email: "alice@example.com",
-//     github: "https://github.com/alice",
-//     linkedin: "https://linkedin.com/in/alice",
-//   },
-//   {
-//     name: "Bob Smith",
-//     photo: "Bennett-Fife.png",
-//     about: "Bob is a software engineer who loves open source projects.",
-//     email: "bob@example.com",
-//     github: "https://github.com/bob",
-//     linkedin: "https://linkedin.com/in/bob",
-//   },
-// ];
-
 const developers = data.developers;
 
 const DevelopersPage = () => {
@@ -43,18 +24,6 @@ const DevelopersPage = () => {
       <Footer />
     </div>
   );
-};
-
-const styles = {
-  container: {
-    padding: "32px",
-    backgroundColor: "#f9f9f9",
-  },
-  header: {
-    fontSize: "2rem",
-    marginBottom: "24px",
-    textAlign: "center",
-  },
 };
 
 export default DevelopersPage;
