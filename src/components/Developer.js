@@ -1,4 +1,4 @@
-// src/components/Student.js
+// src/components/developers
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -6,7 +6,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Developer = ({ name, photo, about, email, github, linkedin, role }) => {
   return (
     <div className='students-flexcolumn__student-flex-item'>
-      <img src={require('../images/students/'+photo)} alt={name} className='students-flexcolumn__student-flex-item__img' />
+      <img src={require('../images/developers/'+photo)} alt={name} className='students-flexcolumn__student-flex-item__img' />
       <div className='students-flexcolumn__student-flex-item__info-div'>
         <div className='st-fl__st-fl-i__in-div__text'>
           <div className='st-fl__st-fl-i__in-div__text__heading'>

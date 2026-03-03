@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import React from "react";
 import Developer from "../components/Developer";
-import data from "../students.json";
+import data from "../developers";
 import { Helmet } from "react-helmet";
 
 // const students = [

@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import nwdScreenshot from "../images/next-wave-dev.png";
 import DeveloperThumbnail from "../components/DeveloperThumbnail";
-import studentData from "../students.json";
+import studentData from "../developers.json";
 import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
 import Footer from "../components/Footer";
