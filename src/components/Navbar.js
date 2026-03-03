@@ -144,7 +144,7 @@ const Navbar = () => {
             external
           />
           <WhiteSpacing />
-          <Item name="Donation" onClick={closeMenus} />
+          <Item name="Donate" onClick={closeMenus} />
         </div>
       )}
     </nav>
