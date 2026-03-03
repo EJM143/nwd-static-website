@@ -9,6 +9,12 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  // ✅ FIXED: Added missing closeMenus function
+  const closeMenus = () => {
+    setMenuOpen(false);
+    setIsDropdownOpen(false);
+  };
+
   useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth <= 768;
@@ -42,7 +48,7 @@ const Navbar = () => {
           justifyContent: "space-between",
         }}
       >
-        <Link to="/Home">
+        <Link to="/Home" onClick={closeMenus}>
           <img
             src={NWDLogo}
             alt="Next Wave Dev Logo"
@@ -78,17 +84,22 @@ const Navbar = () => {
             marginTop: "0.5rem",
           }}
         >
-          <Item name="Contact" />
+          <Item name="Contact" onClick={closeMenus} />
           <WhiteSpacing />
-          <Item name="About" />
+          <Item name="About" onClick={closeMenus} />
           <WhiteSpacing />
-          <Item name="Developers" />
+          <Item name="Developers" onClick={closeMenus} />
           <WhiteSpacing />
-          <Item name="Portfolio" />
+          <Item name="Portfolio" onClick={closeMenus} />
           <WhiteSpacing />
-          <Item name="Services" />
+          <Item name="Services" onClick={closeMenus} />
           <WhiteSpacing />
 
+          {/* Pricing */}
+          <Item name="Pricing" onClick={closeMenus} />
+          <WhiteSpacing />
+
+          {/* Join Us Dropdown */}
           <div className="nav-dropdown">
             <span
               className="nav-dropdown-toggle"
@@ -101,26 +112,24 @@ const Navbar = () => {
             {isDropdownOpen && (
               <div className="nav-dropdown-menu">
                 <Link
-                  to="/Graduates"
+                  to="/graduates"
                   className="nav-dropdown-item"
-                  onClick={() => setIsDropdownOpen(false)}
+                  onClick={closeMenus}
                 >
                   Graduates
                 </Link>
                 <Link
                   to="/apply"
                   className="nav-dropdown-item"
-                  onClick={() => {
-                    setIsDropdownOpen(false);
-                    setMenuOpen(false);
-                  }}
+                  onClick={closeMenus}
                 >
                   Apply
                 </Link>
+                {/* ✅ Fixed case sensitivity */}
                 <Link
-                  to="/Companies"
+                  to="/companies"
                   className="nav-dropdown-item"
-                  onClick={() => setIsDropdownOpen(false)}
+                  onClick={closeMenus}
                 >
                   Companies
                 </Link>
@@ -135,7 +144,7 @@ const Navbar = () => {
             external
           />
           <WhiteSpacing />
-          <Item name="Donation" />
+          <Item name="Donation" onClick={closeMenus} />
         </div>
       )}
     </nav>

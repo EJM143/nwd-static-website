@@ -13,6 +13,7 @@ import CompaniesPage from './pages/CompaniesPage';
 import ApplyPage from "./pages/ApplyPage";
 import Donation from './pages/Donation';
 import ServicesPage from './pages/ServicesPage';
+import PricingPage from "./pages/PricingPage";
 
 // Pageview tracker component
 function PageTracker() {
@@ -43,20 +44,21 @@ function App() {
       <PageTracker />
 
       <Routes>
-        <Route path="/" element={<Navigate to="/Home" />} />
-        <Route path="/Home" element={<Main />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Contact-Thank-You" element={<ContactThankYou />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Portfolio" element={<PortfolioPage />} />
-        <Route path="/Developers" element={<DevelopersPage />} />
-        <Route path="/graduates" element={<GraduatesPage />} />
-        <Route path="/companies" element={<CompaniesPage />} />
-        <Route path="/Donation" element={<Donation />} />
-        <Route path="/Donate" element={<Donation />} />
-        <Route path="/Services" element={<ServicesPage />} />
-        <Route path="/apply" element={<ApplyPage />} />
-      </Routes>
+  <Route path="/" element={<Navigate to="/Home" />} />
+  <Route path="/Home" element={<Main />} />
+  <Route path="/Contact" element={<Contact />} />
+  <Route path="/Contact-Thank-You" element={<ContactThankYou />} />
+  <Route path="/About" element={<About />} />
+  <Route path="/Portfolio" element={<PortfolioPage />} />
+  <Route path="/Developers" element={<DevelopersPage />} />
+  <Route path="/graduates" element={<GraduatesPage />} />
+  <Route path="/companies" element={<CompaniesPage />} />
+  <Route path="/Donation" element={<Donation />} />
+  <Route path="/Donate" element={<Donation />} />
+  <Route path="/Services" element={<ServicesPage />} />
+  <Route path="/apply" element={<ApplyPage />} />
+  <Route path="/pricing" element={<PricingPage />} />
+</Routes>
     </Router>
   );
 }
