@@ -52,6 +52,7 @@ const Footer = () => {
             <li><FooterLink name="About" /></li>
             <li><FooterLink name="Developers" /></li>
             <li><FooterLink name="Portfolio" /></li>
+            <li><FooterLink name="Pricing" /></li>
             <a
               href="https://bonfire.com/store/next-wave-dev-store"
               target="_blank"
