@@ -11,84 +11,70 @@ function About() {
       </Helmet>
       <Navbar />
 
-      <div
-        style={{
-          marginTop: "10vh",
-          marginBottom: "10vh",
-          height: "100%",
-        }}
-      >
-        <div
-          style={{
-            ...flexParent,
-            height: "auto",
-          }}
-          className="about-flex-parent"
-        >
-          {/* Title */}
-          <div
-            style={{
-              ...flexChild,
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "30px",
-              width: "30%",
-            }}
-            className="about-flex-child about-title"
-          >
-            <div
-              style={{
-                width: "90%",
-                fontSize: "68px",
-                fontWeight: 600,
-              }}
-            >
-              Next Wave Dev
-            </div>
-          </div>
+        <div style={{ paddingTop:"2rem", paddingLeft: "3vw", paddingRight:"3vw", maxWidth: "2200px", margin: "0 auto" }}>
+            <h1 style={{ fontSize: "3rem", fontWeight: "700", marginBottom: "2rem", color:"#004da8" }}>
+                About Next Wave Dev
+            </h1>
 
-          {/* About Us Text */}
-          <div
-            style={{
-              ...flexChild,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "70%",
-            }}
-            className="about-flex-child about-text"
-          >
-            <div
-              style={{
-                ...flexChild,
-                fontSize: "1.5rem",
-                width: "80%",
-              }}
-            >
-              <div style={{ marginBottom: "1rem" }}>
-                <strong>About Us:</strong>
-                <br /><br />
-                Bridging the gap between classroom learning and career success,
-                we equip students and recent graduates with the skills,
-                mentorship, and real-world experience needed to deliver
-                high-quality tech solutions.
-              </div>
-            </div>
-          </div>
+            <h2 style={{ fontSize: "2rem", font:"bold", marginBottom: "1rem", color:"gray-800" }}>Our Mission: Launching Tech Careers</h2>
+            <p style={{ fontSize: "1rem", marginBottom: "1rem", color:"gray-600" }}>
+                At Next Wave Dev, our core purpose is to solve the classic conundrum of the tech world: Graduates need experience to get a job, but they need a job to get experience.
+                <br/>
+                We are a dynamic platform dedicated to bridging this gap. We connect highly motivated and skilled recent graduates with real-world company projects, providing them with the vital professional experience, mentorship, and portfolio-building opportunities they need to successfully launch their careers in the technology field.
+            </p>
         </div>
-      </div>
 
-      <img
-        src={NWD_about_photo}
-        alt="Picture of NWD"
-        className="about-page-image"
-        style={{
-          width: "100%",
-          display: "block",
-          height: "80vh",
-          objectFit: "fill",
-        }}
-      />
+        <div style={{ paddingLeft: "3vw", paddingRight:"3vw", maxWidth: "2200px", margin: "0 auto" }}>
+            <div>
+                <h3 style={{ fontSize: "1.5rem", font:"bold", marginBottom: "1rem", color:"gray-800", mb:4 }}>For Graduates: Your Launchpad</h3>
+                <p style={{ fontSize: "1rem", marginBottom: "0.5rem", color:"gray-600" }}>You’ve put in the work, earned the degree, and mastered the theory. Now, it’s time to build your professional portfolio.</p>
+                <ul style={{ paddingBottom:"1rem", marginLeft:"1rem"}}>
+                    <li className="flex items-start">
+                        <span><span className="font-semibold">Gain Real Experience:</span> Work on tangible, in-production company projects, not simulated ones.</span>
+                    </li>
+                    <li className="flex items-start">
+                        <span><span className="font-semibold">Build Your Portfolio:</span> Accumulate impressive case studies and references that hiring managers look for.</span>
+                    </li>
+                    <li className="flex items-start">  
+                        <span><span className="font-semibold">Access Mentorship:</span> Learn best practices, industry workflows, and professional communication from experienced developers and project managers.</span>
+                    </li>
+                    <li className="flex items-start">  
+                        <span><span className="font-semibold">Increase Employability:</span> Graduates from our program are significantly more prepared and marketable for entry-level and junior roles.</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 style={{ fontSize: "1.5rem", font:"bold", marginBottom: "1rem", color:"gray-800" }}>For Companies: Unlocking Future Talent</h3>
+                <p style={{ fontSize: "1rem", marginBottom: "0.5rem", color:"gray-600" }}>Tap into a pool of fresh, enthusiastic, and academically current talent ready to contribute immediately.</p>
+                <ul style={{ paddingBottom:"1rem", marginLeft:"1rem"}}>
+                        <li className="flex items-start">
+                        
+                        <span><span className="font-semibold">Cost-Effective Support:</span> Get project assistance from bright, motivated talent while they gain essential experience.</span>
+                    </li>
+                    <li className="flex items-start">
+                        
+                        <span><span className="font-semibold">Pipeline for Hiring:</span> Identify and evaluate potential full-time employees directly through their project performance.</span>
+                    </li>
+                    <li className="flex items-start">
+                        
+                        <span><span className="font-semibold">Fresh Perspectives:</span> Benefit from the latest methodologies and innovative thinking brought by recent graduates.</span>
+                    </li>
+                    <li className="flex items-start">
+                        
+                        <span><span className="font-semibold">Impactful Contribution:</span> Invest in the future of the tech industry by providing invaluable opportunities to the next generation of developers.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <div style={{ paddingLeft:"3vw", paddingBottom:"2rem", maxWidth: "2200px", margin: "0 auto" }}>
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Vision</h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                    We envision a tech ecosystem where the path from graduation to a successful, fulfilling career is clear, efficient, and accessible to everyone. Next Wave Dev is more than just a platform; we are the dedicated accelerator for the next generation of tech leaders.
+                </p>
+            </div>
+        
+        
       <Footer />
     </>
   );
