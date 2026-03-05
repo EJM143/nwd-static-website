@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import Section from "../components/Section";
 
 function GraduatesPage() {
   return (
@@ -11,6 +12,7 @@ function GraduatesPage() {
 
       <Navbar />
 
+    <Section>
       <div
         style={{
           padding: "5rem 5vw",
@@ -135,7 +137,8 @@ function GraduatesPage() {
         >
           Apply Now &amp; Start Building Your Portfolio
         </a>
-      </div>
+        </div>
+      </Section>
 
       <Footer />
     </>

@@ -6,6 +6,7 @@ import developerData from "../developers.json";
 import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
 import Footer from "../components/Footer";
+import Section from '../components/Section'
 
 const developerDatafiltered = developerData.developers.filter(
   (item) => item.photo !== "anon-profile-image.png"
@@ -90,7 +91,8 @@ function Main() {
             </button>
           </Link>
         </div> 
-      </div>  
+      </div>
+    <Section>  
       <div className="graduates-companies-section">
         <h2 className="graduates-companies-section__title">Graduates & Companies</h2>
         <div className="graduates-companies-section__tiles">
@@ -112,6 +114,7 @@ function Main() {
           </Link>
         </div>
       </div>
+      </Section>
       <div className="contact-div">
         <div className="contact-div__contact-wrapper">
           <FormComponent />

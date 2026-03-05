@@ -989,3 +989,13 @@ svg {
     grid-template-columns: 1fr;
   }
 }
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-light { background: #ffffff; }
+.section-dark { background: #111111; color: white; }
+.section-muted { background: #f5f5f5; }
