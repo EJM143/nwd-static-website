@@ -74,6 +74,17 @@ function About() {
                 </p>
             </div>
         
+        <img
+          src={NWD_about_photo}
+          alt="Picture of NWD"
+          className="about-page-image"
+          style={{
+            width: "100%",
+            display: "block",
+            height: "80vh",
+            objectFit: "fill",
+          }}
+        />
         
       <Footer />
     </>
