@@ -8,7 +8,7 @@ function ServicesPage() {
     <>
       <Navbar />
   
-      <div style={{ padding: "60px 40px", maxWidth: "1200px", margin: "0 auto" }}>
+      <Section variant="muted">
 
       <Helmet>
         <title>Services | Next Wave Dev</title>
@@ -132,7 +132,7 @@ function ServicesPage() {
         Contact Us
       </a>
 
-    </div>
+      </Section>
 
     <Footer />
   </>
