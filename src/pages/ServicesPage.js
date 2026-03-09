@@ -9,7 +9,7 @@ function ServicesPage() {
     <>
       <Navbar />
   
-      <Section variant="muted">
+      <div>
 
       <Helmet>
         <title>Services | Next Wave Dev</title>
@@ -133,7 +133,7 @@ function ServicesPage() {
         Contact Us
       </a>
 
-      </Section>
+      </div>
 
     <Footer />
   </>
