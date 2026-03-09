@@ -52,13 +52,13 @@ function App() {
   <Route path="/About" element={<About />} />
   <Route path="/Portfolio" element={<PortfolioPage />} />
   <Route path="/Developers" element={<DevelopersPage />} />
-  <Route path="/graduates" element={<GraduatesPage />} />
-  <Route path="/companies" element={<CompaniesPage />} />
+  <Route path="/Graduates" element={<GraduatesPage />} />
+  <Route path="/Companies" element={<CompaniesPage />} />
   <Route path="/Donation" element={<Donation />} />
   <Route path="/Donate" element={<Donation />} />
   <Route path="/Services" element={<ServicesPage />} />
-  <Route path="/apply" element={<ApplyPage />} />
-  <Route path="/pricing" element={<PricingPage />} />
+  <Route path="/Apply" element={<ApplyPage />} />
+  <Route path="/Pricing" element={<PricingPage />} />
   <Route path="*" element={<NotFound />} />
 </Routes>
     </Router>
