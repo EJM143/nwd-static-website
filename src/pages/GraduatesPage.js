@@ -28,7 +28,7 @@ function GraduatesPage() {
         <h2 style={{ marginTop: "40px", marginBottom: "15px"}}>
           Welcome, Future Tech Leader!
         </h2>
-        <p style={{ marginBottom: "30px" }}>
+        <p style={{ marginBottom: "30px", lineHeight: "1.7" }}>
           You’ve got the skills. You’ve got the drive. Now, you need the experience that unlocks the door
           to your dream job. Next Wave Dev is your fast-track solution to transforming your academic
           knowledge into professional expertise.

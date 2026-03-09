@@ -22,7 +22,7 @@ function CompaniesPage() {
                 <h2 style={{ marginTop: "40px", marginBottom: "15px"}}>
                     Get Project Momentum and Identify Future Hires
                 </h2>
-                <p style={{ marginBottom: "30px" }}>
+                <p style={{ marginBottom: "30px", lineHeight: "1.7" }}>
                     Are your junior developers overwhelmed? Do you have small, high-value projects 
                     waiting on the back burner? Next Wave Dev connects your business with enthusiastic, 
                     trained, and academically fresh graduates ready to deliver immediate value.
@@ -115,7 +115,7 @@ function CompaniesPage() {
                 <h2>
                     Invest in Development, Not Just Hiring
                 </h2>
-                <p style={{ marginBottom: "30px" }}>
+                <p style={{ marginBottom: "30px", lineHeight: "1.7" }}>
                     We are committed to providing you with talent that is eager, capable, and ready to learn. Start solving your project challenges today and build your talent pipeline for tomorrow.
                 </p>
 
