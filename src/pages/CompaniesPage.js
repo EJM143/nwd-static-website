@@ -125,7 +125,7 @@ function CompaniesPage() {
                     Schedule a Call to Discuss Your Project Needs
                 </a>
             </div>
-            <TestimonialsSection />
+            <TestimonialsSection type="companies" />
             <Footer />
         </>
     );

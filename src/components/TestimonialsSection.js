@@ -1,13 +1,16 @@
 import TestimonialCard from "./TestimonialCard";
 
-const testimonials = [
+const graduateTestimonials = [
   {
     name: "Jane Smith",
     role: "Software Developer",
-    company: "TechCorp",
+    company: "",
     rating: 5,
     quote: "Next Wave Dev helped me build real industry skills."
-  },
+  }
+];
+
+const companyTestimonials = [
   {
     name: "Mark Lee",
     role: "Hiring Manager",
@@ -17,7 +20,18 @@ const testimonials = [
   }
 ];
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ type }) {
+
+  let testimonials = [];
+
+  if (type === "graduates") {
+    testimonials = graduateTestimonials;
+  } else if (type === "companies") {
+    testimonials = companyTestimonials;
+  } else {
+    testimonials = [...graduateTestimonials, ...companyTestimonials];
+  }
+
   return (
     <section className="testimonials">
       <h2>Testimonials</h2>

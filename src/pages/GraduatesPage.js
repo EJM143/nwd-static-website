@@ -138,7 +138,7 @@ function GraduatesPage() {
         </a>
       </div>
       
-      <TestimonialsSection />
+      <TestimonialsSection type="graduates" />
 
       <Footer />
     </>
