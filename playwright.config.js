@@ -8,5 +8,6 @@ module.exports = defineConfig({
     command: 'npm start',
     port: 3000,
     reuseExistingServer: true,
+    timeout: 120000,
   },
 });
