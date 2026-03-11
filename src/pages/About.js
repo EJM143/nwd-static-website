@@ -81,8 +81,7 @@ function About() {
           style={{
             width: "100%",
             display: "block",
-            height: "80vh",
-            objectFit: "fill",
+            height: "auto",
           }}
         />
         
