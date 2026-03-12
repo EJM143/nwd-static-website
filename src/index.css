@@ -989,3 +989,45 @@ svg {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== 404 PAGE ===== */
+
+.notfound-container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.notfound-title {
+  font-size: 6rem;
+  color: var(--primary-blue);
+}
+
+.notfound-message {
+  font-size: 1.5rem;
+  max-width: 500px;
+}
+
+.notfound-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.notfound-button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.notfound-button:hover {
+  background-color: #003a7a;
+}
