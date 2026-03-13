@@ -7,6 +7,27 @@ export function FormComponent() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+     // validation here
+    const name = e.target["entry.2005620554"].value.trim();
+    const email = e.target["emailAddress"].value.trim();
+    const message = e.target["entry.839337160"].value.trim();
+
+    if (!name || !email || !message) {
+      alert("Fields cannot be empty.");
+      return;
+    }
+
+    if (!email.includes("@")) {
+      alert("Invalid email.");
+      return;
+    }
+
+    if (message.length > 500) {
+      alert("Message must be under 500 characters.");
+      return;
+    }
+
     setSubmitting(true);
 
     const formData = new FormData(e.target);
