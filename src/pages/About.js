@@ -78,14 +78,10 @@ function About() {
           src={NWD_about_photo}
           alt="Picture of NWD"
           className="about-page-image"
-          style={{
-            width: "100%",
-            display: "block",
-            height: "80vh",
-            objectFit: "fill",
-          }}
+          style={{ width: "100%", 
+                   display: "block", 
+                   height: "auto" }}
         />
-        
       <Footer />
     </>
   );
