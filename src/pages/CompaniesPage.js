@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 function CompaniesPage() {
     const CTA_LINK = "#/Contact";
@@ -135,6 +136,7 @@ function CompaniesPage() {
                     Schedule a Call to Discuss Your Project Needs
                 </a>
             </div>
+            <TestimonialsSection type="companies" />
             <Footer />
         </>
     );
