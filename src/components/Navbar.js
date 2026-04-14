@@ -8,11 +8,13 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isHireDropdownOpen, setIsHireDropdownOpen] = useState(false);
 
   // ✅ FIXED: Added missing closeMenus function
   const closeMenus = () => {
     setMenuOpen(false);
     setIsDropdownOpen(false);
+    setIsHireDropdownOpen(false);
   };
 
   useEffect(() => {
@@ -22,6 +24,7 @@ const Navbar = () => {
       if (!mobile) {
         setMenuOpen(false);
         setIsDropdownOpen(false);
+        setIsHireDropdownOpen(false);
       }
     };
 
@@ -95,15 +98,49 @@ const Navbar = () => {
           <Item name="Services" onClick={closeMenus} />
           <WhiteSpacing />
 
-          {/* Pricing */}
-          <Item name="Pricing" onClick={closeMenus} />
+          {/* Hire Us Dropdown */}
+          <div className="nav-dropdown">
+            <span
+              className="nav-dropdown-toggle"
+              onClick={() => {
+                setIsHireDropdownOpen(!isHireDropdownOpen);
+                setIsDropdownOpen(false);
+              }}
+              style={{ cursor: "pointer", color: "white" }}
+            >
+              Hire Us
+            </span>
+
+            {isHireDropdownOpen && (
+              <div className="nav-dropdown-menu">
+                <Link
+                  to="/companies"
+                  className="nav-dropdown-item"
+                  onClick={closeMenus}
+                >
+                  Companies
+                </Link>
+                <Link
+                  to="/pricing"
+                  className="nav-dropdown-item"
+                  onClick={closeMenus}
+                >
+                  Pricing
+                </Link>
+              </div>
+            )}
+          </div>
+
           <WhiteSpacing />
 
           {/* Join Us Dropdown */}
           <div className="nav-dropdown">
             <span
               className="nav-dropdown-toggle"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              onClick={() => {
+                setIsDropdownOpen(!isDropdownOpen);
+                setIsHireDropdownOpen(false);
+              }}
               style={{ cursor: "pointer", color: "white" }}
             >
               Join Us
@@ -126,13 +163,6 @@ const Navbar = () => {
                   Apply
                 </Link>
                 {/* ✅ Fixed case sensitivity */}
-                <Link
-                  to="/companies"
-                  className="nav-dropdown-item"
-                  onClick={closeMenus}
-                >
-                  Companies
-                </Link>
               </div>
             )}
           </div>
