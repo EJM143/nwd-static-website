@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import TestimonialsSection from "../components/TestimonialsSection";
+import Button from "../components/Button";
 
 function CompaniesPage() {
     const CTA_LINK = "#/Contact";
@@ -120,21 +121,9 @@ function CompaniesPage() {
                     We are committed to providing you with talent that is eager, capable, and ready to learn. Start solving your project challenges today and build your talent pipeline for tomorrow.
                 </p>
 
-                <a
-                    href={CTA_LINK}
-                    style={{
-                        display: "inline-block",
-                        padding: "12px 20px",
-                        backgroundColor: "#007BFF",
-                        color: "white",
-                        borderRadius: "6px",
-                        textDecoration: "none",
-                        fontWeight: "bold"
-                    }}
-                    aria-label="Schedule a Call to Discuss Your Project Needs"
-                >
+                <Button to="/contact" variant="primary">
                     Schedule a Call to Discuss Your Project Needs
-                </a>
+                </Button>
             </div>
             <TestimonialsSection type="companies" />
             <Footer />

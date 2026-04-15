@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import TestimonialsSection from "../components/TestimonialsSection";
-import { TLSSocket } from "tls";
+import Button from "../components/Button";
 
 
 function GraduatesPage() {
@@ -124,21 +124,9 @@ function GraduatesPage() {
           Ready to Stop Applying and Start Doing?
         </h2>
 
-        <a
-          href="/contact"
-          style={{
-            display: "inline-block",
-            padding: "12px 20px",
-            borderRadius: "6px",
-            textDecoration: "none",
-            fontWeight: "bold",
-            backgroundColor: "#007BFF",
-            color: "white",
-          }}
-          aria-label="Apply Now & Start Building Your Portfolio"
-        >
-          Apply Now &amp; Start Building Your Portfolio
-        </a>
+        <Button to="/apply" variant="primary">
+          Apply Now
+        </Button>
       </div>
       
       <TestimonialsSection type="graduates" />

@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
 import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
+import Button from "../components/Button";
 
 const developerDatafiltered = developerData.developers.filter(
   (item) => item.photo !== "anon-profile-image.png"
@@ -85,11 +86,10 @@ function Main() {
           <p className="donation-div__flexcol__paragraph">
             Your contribution helps us provide essential resources, mentorship, and real-world project opportunities to aspiring student developers, empowering them to launch successful careers in tech.
           </p>
-          <Link to={"/Donation"}>
-            <button className="donation-div__button" type="button">
-              Donate Now
-            </button>
-          </Link>
+          <Button to="/Donation" variant="primary">
+            Donate Now
+          </Button>
+    
         </div> 
       </div>  
       <div className="graduates-companies-section">
