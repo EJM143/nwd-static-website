@@ -10,6 +10,9 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isHireDropdownOpen, setIsHireDropdownOpen] = useState(false);
 
+  const [hireTimeout, setHireTimeout] = useState(null);
+  const [joinTimeout, setJoinTimeout] = useState(null);
+
   // ✅ FIXED: Added missing closeMenus function
   const closeMenus = () => {
     setMenuOpen(false);
@@ -99,7 +102,23 @@ const Navbar = () => {
           <WhiteSpacing />
 
           {/* Hire Us Dropdown */}
-          <div className="nav-dropdown">
+          <div
+            className="nav-dropdown"
+            onMouseEnter={() => {
+              if (!isMobile) {
+                if (hireTimeout) clearTimeout(hireTimeout);
+                setIsHireDropdownOpen(true);
+              }
+            }}
+            onMouseLeave={() => {
+              if (!isMobile) {
+                const timeout = setTimeout(() => {
+                  setIsHireDropdownOpen(false);
+                }, 200);
+                setHireTimeout(timeout);
+              }
+            }}
+          >
             <span
               className="nav-dropdown-toggle"
               onClick={() => {
@@ -134,7 +153,23 @@ const Navbar = () => {
           <WhiteSpacing />
 
           {/* Join Us Dropdown */}
-          <div className="nav-dropdown">
+          <div
+            className="nav-dropdown"
+            onMouseEnter={() => {
+              if (!isMobile) {
+                if (joinTimeout) clearTimeout(joinTimeout);
+                setIsDropdownOpen(true);
+              }
+            }}
+            onMouseLeave={() => {
+              if (!isMobile) {
+                const timeout = setTimeout(() => {
+                  setIsDropdownOpen(false);
+                }, 200);
+                setJoinTimeout(timeout);
+              }
+            }}
+          >
             <span
               className="nav-dropdown-toggle"
               onClick={() => {
