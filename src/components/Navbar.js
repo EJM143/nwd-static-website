@@ -13,7 +13,6 @@ const Navbar = () => {
   const [hireTimeout, setHireTimeout] = useState(null);
   const [joinTimeout, setJoinTimeout] = useState(null);
 
-  // ✅ FIXED: Added missing closeMenus function
   const closeMenus = () => {
     setMenuOpen(false);
     setIsDropdownOpen(false);
@@ -197,7 +196,6 @@ const Navbar = () => {
                 >
                   Apply
                 </Link>
-                {/* ✅ Fixed case sensitivity */}
               </div>
             )}
           </div>
