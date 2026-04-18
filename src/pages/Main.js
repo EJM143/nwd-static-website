@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
 import Footer from "../components/Footer";
 import Section from '../components/Section'
+import TestimonialsSection from "../components/TestimonialsSection";
+
 
 const developerDatafiltered = developerData.developers.filter(
   (item) => item.photo !== "anon-profile-image.png"
@@ -114,7 +116,10 @@ function Main() {
           </Link>
         </div>
       </div>
+
       </Section>
+
+      <TestimonialsSection />
       <div className="contact-div">
         <div className="contact-div__contact-wrapper">
           <FormComponent />

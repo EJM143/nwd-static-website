@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
-
 import Section from "../components/Section";
+import TestimonialsSection from "../components/TestimonialsSection";
 import { TLSSocket } from "tls";
 
 
@@ -141,8 +141,13 @@ function GraduatesPage() {
         >
           Apply Now &amp; Start Building Your Portfolio
         </a>
+
         </div>
       </Section>
+
+      </div>
+      
+      <TestimonialsSection type="graduates" />
 
       <Footer />
     </>
