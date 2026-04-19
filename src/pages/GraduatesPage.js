@@ -144,8 +144,6 @@ function GraduatesPage() {
 
         </div>
       </Section>
-
-      </div>
       
       <TestimonialsSection type="graduates" />
 
