@@ -14,9 +14,6 @@ function CompaniesPage() {
             <Navbar />
 
         <Section>
-            <div style={styles.container}>
-                <h1 style={styles.mainHeading}>
-
 
             <div style={{ padding: "60px 40px", maxWidth: "1200px", margin: "0 auto"}}>
                 <Helmet>
