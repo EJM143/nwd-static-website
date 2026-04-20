@@ -118,13 +118,6 @@ const Navbar = () => {
                 >
                   Graduates
                 </Link>
-                <Link
-                  to="/apply"
-                  className="nav-dropdown-item"
-                  onClick={closeMenus}
-                >
-                  Apply
-                </Link>
                 {/* ✅ Fixed case sensitivity */}
                 <Link
                   to="/companies"

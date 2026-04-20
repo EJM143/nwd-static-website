@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
 import TestimonialsSection from "../components/TestimonialsSection";
 import { TLSSocket } from "tls";
+import { Link } from "react-router-dom";
 
 
 function GraduatesPage() {
@@ -124,8 +125,8 @@ function GraduatesPage() {
           Ready to Stop Applying and Start Doing?
         </h2>
 
-        <a
-          href="/contact"
+        <Link
+          to="/apply"
           style={{
             display: "inline-block",
             padding: "12px 20px",
@@ -138,7 +139,7 @@ function GraduatesPage() {
           aria-label="Apply Now & Start Building Your Portfolio"
         >
           Apply Now &amp; Start Building Your Portfolio
-        </a>
+        </Link>
       </div>
       
       <TestimonialsSection type="graduates" />
@@ -158,4 +159,3 @@ const tdStyle = {
 };
 
 export default GraduatesPage;
-
