@@ -199,13 +199,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
-          <WhiteSpacing />
-          <Item
-            name="Shop"
-            to="https://bonfire.com/store/next-wave-dev-store/"
-            external
-          />
           <WhiteSpacing />
           <Item name="Donate" onClick={closeMenus} />
         </div>

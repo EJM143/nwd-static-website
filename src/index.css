@@ -1049,12 +1049,41 @@ svg {
 }
 
 
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-light { background: #ffffff; }
+.section-dark { background: #111111; color: white; }
+.section-muted { background: #f5f5f5; }
+
 /* Testimonials */
+.testimonials {
+  background-color: rgb(119, 172, 221);
+  padding: 4rem 1rem;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials-grid > * {
+  text-align: left;
+  max-width: 300px;
+}
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px;
+
+  max-width: 800px;   
+  margin: 0 auto;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
@@ -1062,7 +1091,8 @@ svg {
     grid-template-columns: 1fr;
   }
 }
-=======
+
+
 /* ===== 404 PAGE ===== */
 
 .notfound-container {
@@ -1104,6 +1134,7 @@ svg {
 .notfound-button:hover {
   background-color: #003a7a;
 }
+
 
 /* Fix section titles wrapping on mobile */
 
@@ -1184,3 +1215,4 @@ h1, h2, h3 {
     font-size: 1.5rem;
   }
 }
+
