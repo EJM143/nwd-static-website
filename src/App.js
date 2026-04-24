@@ -15,6 +15,7 @@ import Donation from './pages/Donation';
 import ServicesPage from './pages/ServicesPage';
 import PricingPage from "./pages/PricingPage";
 import NotFound from "./pages/NotFound";
+import Volunteer from "./pages/Volunteer";
 
 // Pageview tracker component
 function PageTracker() {
@@ -52,13 +53,14 @@ function App() {
   <Route path="/About" element={<About />} />
   <Route path="/Portfolio" element={<PortfolioPage />} />
   <Route path="/Developers" element={<DevelopersPage />} />
-  <Route path="/Graduates" element={<GraduatesPage />} />
-  <Route path="/Companies" element={<CompaniesPage />} />
+  <Route path="/graduates" element={<GraduatesPage />} />
+  <Route path="/companies" element={<CompaniesPage />} />
   <Route path="/Donation" element={<Donation />} />
   <Route path="/Donate" element={<Donation />} />
   <Route path="/Services" element={<ServicesPage />} />
-  <Route path="/Apply" element={<ApplyPage />} />
+  <Route path="/apply" element={<ApplyPage />} />
   <Route path="/Pricing" element={<PricingPage />} />
+  <Route path="/volunteer" element={<Volunteer />} />
   <Route path="*" element={<NotFound />} />
 </Routes>
     </Router>

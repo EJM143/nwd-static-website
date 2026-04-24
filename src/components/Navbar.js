@@ -133,6 +133,13 @@ const Navbar = () => {
                 >
                   Companies
                 </Link>
+                <Link
+                  to="/volunteer"
+                  className="nav-dropdown-item"
+                  onClick={closeMenus}
+                >
+                  Volunteer
+                </Link>
               </div>
             )}
           </div>
