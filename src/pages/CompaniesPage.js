@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import Section from "../components/Section";
 import TestimonialsSection from "../components/TestimonialsSection";
+
 
 function CompaniesPage() {
     const CTA_LINK = "#/Contact";
@@ -11,12 +13,15 @@ function CompaniesPage() {
         <>
             <Navbar />
 
+        <Section>
+
             <div style={{ padding: "60px 40px", maxWidth: "1200px", margin: "0 auto"}}>
                 <Helmet>
                     <title>Next Wave Dev - Companies</title>
                 </Helmet>
 
                 <h1 style={{marginBottom: "25px"}}>
+
                     For Companies – Secure Your Future Talent Pipeline
                 </h1>
 
@@ -136,7 +141,11 @@ function CompaniesPage() {
                     Schedule a Call to Discuss Your Project Needs
                 </a>
             </div>
+
+            </Section>
+
             <TestimonialsSection type="companies" />
+
             <Footer />
         </>
     );
