@@ -112,14 +112,14 @@ const Navbar = () => {
             {isDropdownOpen && (
               <div className="nav-dropdown-menu">
                 <Link
-                  to="/Graduates"
+                  to="/graduates"
                   className="nav-dropdown-item"
                   onClick={closeMenus}
                 >
                   Graduates
                 </Link>
                 <Link
-                  to="/Apply"
+                  to="/apply"
                   className="nav-dropdown-item"
                   onClick={closeMenus}
                 >
@@ -127,14 +127,14 @@ const Navbar = () => {
                 </Link>
                 {/* ✅ Fixed case sensitivity */}
                 <Link
-                  to="/Companies"
+                  to="/companies"
                   className="nav-dropdown-item"
                   onClick={closeMenus}
                 >
                   Companies
                 </Link>
                 <Link
-                  to="/Volunteer"
+                  to="/volunteer"
                   className="nav-dropdown-item"
                   onClick={closeMenus}
                 >
