@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
+import Section from "../components/Section";
 import TestimonialsSection from "../components/TestimonialsSection";
 import { pageMetadata, BASE_URL } from "../utils/metadataConfig";
+
 
 function CompaniesPage() {
     const metadata = pageMetadata.companies;
@@ -12,6 +14,8 @@ function CompaniesPage() {
     return (
         <>
             <Navbar />
+
+        <Section>
 
             <div style={{ padding: "60px 40px", maxWidth: "1200px", margin: "0 auto"}}>
                 <Helmet>
@@ -42,6 +46,7 @@ function CompaniesPage() {
                 </Helmet>
 
                 <h1 style={{marginBottom: "25px"}}>
+
                     For Companies – Secure Your Future Talent Pipeline
                 </h1>
 
@@ -161,7 +166,11 @@ function CompaniesPage() {
                     Schedule a Call to Discuss Your Project Needs
                 </a>
             </div>
+
+            </Section>
+
             <TestimonialsSection type="companies" />
+
             <Footer />
         </>
     );
