@@ -189,16 +189,18 @@ const Navbar = () => {
                 >
                   Graduates
                 </Link>
+
                 <Link
-                  to="/apply"
+                  to="/companies"
                   className="nav-dropdown-item"
                   onClick={closeMenus}
                 >
-                  Apply
+                  Companies
                 </Link>
               </div>
             )}
           </div>
+
           <WhiteSpacing />
           <Item name="Donate" onClick={closeMenus} />
         </div>
