@@ -174,7 +174,7 @@ function CompaniesPage() {
             </Section>
 
             <TestimonialsSection type="companies" />
-
+            </div>
             <Footer />
         </>
     );
