@@ -6,7 +6,10 @@ import developerData from "../developers.json";
 import { Helmet } from "react-helmet";
 import { FormComponent } from "../components/microComponents/contact/form";
 import Footer from "../components/Footer";
+import Section from '../components/Section'
 import TestimonialsSection from "../components/TestimonialsSection";
+import { pageMetadata, BASE_URL } from "../utils/metadataConfig";
+
 
 const developerDatafiltered = developerData.developers.filter(
   (item) => item.photo !== "anon-profile-image.png"
@@ -15,10 +18,36 @@ const developerDataSlice = developerDatafiltered.slice(0, 16);
 
 function Main() {
   console.log(developerDatafiltered.length);
+  const metadata = pageMetadata.home;
+  
   return (
     <>  
       <Helmet>
-        <title> Next Wave Dev </title>
+        {/* Primary Meta Tags */}
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={`${BASE_URL}/#${metadata.pageUrl}`} />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content={metadata.type} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={`${BASE_URL}/og-logo.png`} />
+        <meta property="og:image:alt" content="Next Wave Dev Logo" />
+        <meta property="og:url" content={`${BASE_URL}/#${metadata.pageUrl}`} />
+        <meta property="og:site_name" content="Next Wave Dev" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content={`${BASE_URL}/og-logo.png`} />
+        
+        {/* Additional Meta Tags */}
+        <meta name="keywords" content="tech career, graduate program, development, mentorship, real-world experience" />
+        <meta name="author" content="Next Wave Dev" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <Navbar />
       <div className="homepage-content">
@@ -91,7 +120,8 @@ function Main() {
             </button>
           </Link>
         </div> 
-      </div>  
+      </div>
+    <Section>  
       <div className="graduates-companies-section">
         <h2 className="graduates-companies-section__title">Graduates & Companies</h2>
         <div className="graduates-companies-section__tiles">
@@ -113,6 +143,9 @@ function Main() {
           </Link>
         </div>
       </div>
+
+      </Section>
+
       <TestimonialsSection />
       <div className="contact-div">
         <div className="contact-div__contact-wrapper">
