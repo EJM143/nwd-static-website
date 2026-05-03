@@ -15,9 +15,13 @@ function CompaniesPage() {
         <>
             <Navbar />
 
+
+            <div>
+
         <Section>
 
             <div style={{ padding: "60px 40px", maxWidth: "1200px", margin: "0 auto"}}>
+
                 <Helmet>
                     {/* Primary Meta Tags */}
                     <title>{metadata.title}</title>
@@ -53,7 +57,7 @@ function CompaniesPage() {
                 <h2 style={{ marginTop: "40px", marginBottom: "15px"}}>
                     Get Project Momentum and Identify Future Hires
                 </h2>
-                <p style={{ marginBottom: "30px", lineHeight: "1.7" }}>
+                <p style={{ marginBottom: "40px", lineHeight: "1.7" }}>
                     Are your junior developers overwhelmed? Do you have small, high-value projects 
                     waiting on the back burner? Next Wave Dev connects your business with enthusiastic, 
                     trained, and academically fresh graduates ready to deliver immediate value.
@@ -62,7 +66,7 @@ function CompaniesPage() {
                 <h2 style={{ marginTop: "40px", marginBottom: "15px"}}>
                     The Next Wave Advantage
                 </h2>
-                <p style={{ marginBottom: "30px" }}>
+                <p style={{ marginBottom: "40px", lineHeight: "1.7" }}>
                     We provide a zero-risk way to address project needs while scouting high-potential 
                     talent before they hit the general job market.
                 </p>
@@ -170,7 +174,7 @@ function CompaniesPage() {
             </Section>
 
             <TestimonialsSection type="companies" />
-
+            </div>
             <Footer />
         </>
     );
